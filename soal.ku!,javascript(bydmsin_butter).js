@@ -1,0 +1,51 @@
+// scripts.js
+document.addEventListener("DOMContentLoaded", function() {
+    setInterval(refreshPage, 1800000); // Refresh every 30 minutes
+
+    function refreshPage() {
+        location.reload();
+    }
+
+    function updateClock() {
+        const clockElement = document.getElementById("clock");
+        const now = new Date();
+        clockElement.innerText = now.toLocaleTimeString("en-GB", { timeZone: "Asia/Jakarta" });
+    }
+
+    setInterval(updateClock, 1000); // Update clock every second
+    updateClock(); // Initial call to display clock immediately
+});
+
+function openSettings() {
+    document.getElementById("settings-modal").style.display = "block";
+}
+
+function closeSettings() {
+    document.getElementById("settings-modal").style.display = "none";
+}
+
+function showVersion() {
+    alert("Versi Web: 3.0.0,versi stabil dan versi akhir");
+}
+
+function playMusic() {
+    const music = document.getElementById("background-music");
+    music.play();
+}
+
+function adjustVolume() {
+    const music = document.getElementById("background-music");
+    const volume = prompt("Set volume (0.0 - 1.0):", "0.5");
+    if (volume !== null) {
+        music.volume = parseFloat(volume);
+    }
+}
+
+function aboutWebsite() {
+    window.location.href = "about.html"; // Assuming you have an about.html page
+}
+
+// Tambahkan fungsi untuk menampilkan pengaturan
+function showSettings() {
+    // Logika untuk menampilkan pengaturan
+}
