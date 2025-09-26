@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TENTANG</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/919/919827.png">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Website Biru Kuning">
+  <meta property="og:description" content="Website sederhana dengan tema biru muda, kuning muda, dan biru tua.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/919/919827.png">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #d6f0ff, #fff9d6);
+      color: #002b5c;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: linear-gradient(90deg, #a2d2ff, #ffe28a);
+      color: #002b5c;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      animation: fadeDown 1.5s ease;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      animation: fadeUp 2s ease;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #0056a3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #002b5c;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Animated blob */
+    .blob {
+      position: fixed;
+      top: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, #a2d2ff 0%, #0056a3 100%);
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.4;
+      animation: moveBlob 15s infinite alternate ease-in-out;
+      z-index: -1;
+    }
+
+    @keyframes moveBlob {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(200px, 100px) scale(1.2); }
+      100% { transform: translate(0, 200px) scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="blob"></div>
+  
+  <header>
+    <h1>Selamat Datang!</h1>
+    <p>DI HALAMAN TENTANG SOAL.KU! ✨</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Tentang</h2>
+      <p>Website ini dibuat sederhana, ringan, dan mudah untuk di-hosting.</p>
+    </div>
+    <div class="card">
+      <h2>Fitur</h2>
+      <p>✔ Tampilan bersih<br>✔ Animasi halus<br>✔ Warna cerah</p>
+    </div>
+    <div class="card">
+      <h2>Hubungi</h2>
+      <p>Jika ingin mengembangkan lebih lanjut, Anda bisa menambahkan permintaan di bagian halaman soal.ku! "nilai web kami!".</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Website Biru Kuning. Dibuat dengan ❤ dari natural publish pusat.</p>
+  </footer>
+</body>
+</html>
